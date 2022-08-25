@@ -7,7 +7,7 @@
  * Return: none
  */
 
-/*void preorder(binary_tree_t *control, void (*func)(int))
+void preorder(binary_tree_t *control, void (*func)(int))
 {
 	func(control->n);
 	while (control->left)
@@ -19,7 +19,7 @@
 	}
 	if (control->right)
 		preorder(control->right, func);
-}*/
+}
 
 /**
  * binary_tree_preorder - main function to move through binary tree
@@ -28,7 +28,7 @@
  * Return: none
  */
 
-/*void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
+void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 {
 	if (!tree || !func)
 		return;
@@ -37,4 +37,4 @@
 		preorder(tree->left, func);
 	if (tree->right)
 		preorder(tree->right, func);
-}*/
+}
