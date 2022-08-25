@@ -8,18 +8,18 @@
 
 size_t leaf_counter(binary_tree_t *node)
 {
-        size_t number = 0;
+	size_t number = 0;
 
-        if (!node->left && !node->right)
-        {
-                number++;
-                return (number);
-        }
-        if (node->left)
-                number = leaf_counter(node->left);
-        if (node->right)
-                number += leaf_counter(node->right);
-        return (number);
+	if (!node->left && !node->right)
+	{
+		number++;
+		return (number);
+	}
+	if (node->left)
+		number = leaf_counter(node->left);
+	if (node->right)
+		number += leaf_counter(node->right);
+	return (number);
 }
 
 /**
