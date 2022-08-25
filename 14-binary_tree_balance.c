@@ -10,8 +10,8 @@
 int caller(binary_tree_t *control, int height)
 {
 	int left_height = 0, right_height = 0;
-	height += 1;
 
+	height += 1;
 	if (control->left)
 		left_height = caller(control->left, height);
 	if (control->right)
